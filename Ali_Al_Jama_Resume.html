@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Ahmad Al Jama — Software Developer</title>
+<style>
+  :root{
+    --ink:#1a1a1a;
+    --muted:#555;
+    --accent:#1f4e79;
+    --line:#d9dee3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Calibri","Segoe UI",Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    line-height:1.32;
+    font-size:10.4pt;
+    background:#f2f3f5;
+  }
+  .page{
+    max-width:8.27in;
+    margin:24px auto;
+    background:#fff;
+    padding:0.5in 0.6in;
+    box-shadow:0 2px 14px rgba(0,0,0,.12);
+  }
+  header{text-align:center;border-bottom:2px solid var(--accent);padding-bottom:8px;}
+  h1{font-size:21pt;letter-spacing:.5px;color:var(--ink);}
+  .role{font-size:11pt;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:1.5px;margin-top:2px;}
+  .contact{font-size:9.3pt;color:var(--muted);margin-top:6px;}
+  .contact a{color:var(--muted);text-decoration:none;}
+  .contact span{white-space:nowrap;}
+  .sep{color:var(--line);margin:0 6px;}
+  section{margin-top:11px;}
+  h2{
+    font-size:10.5pt;text-transform:uppercase;letter-spacing:1.2px;
+    color:var(--accent);border-bottom:1px solid var(--line);
+    padding-bottom:3px;margin-bottom:6px;
+  }
+  p.summary{text-align:justify;}
+  .entry{margin-bottom:8px;}
+  .entry:last-child{margin-bottom:0;}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
+  .title{font-weight:700;}
+  .stack{color:var(--muted);font-size:9.2pt;font-style:italic;}
+  .sub{font-style:italic;color:var(--muted);}
+  .date{color:var(--muted);font-size:9.3pt;white-space:nowrap;}
+  ul{margin:3px 0 0 16px;}
+  li{margin-bottom:2px;}
+  .skills-grid{display:grid;grid-template-columns:max-content 1fr;gap:3px 14px;}
+  .skills-grid .k{font-weight:700;color:var(--ink);}
+  @media print{
+    body{background:#fff;font-size:10.1pt;}
+    .page{margin:0;box-shadow:none;max-width:none;padding:0.35in 0.5in;}
+    @page{size:A4;margin:0;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>Ali Ahmad Al Jama</h1>
+    <div class="role">Software Developer</div>
+    <div class="contact">
+      <span><a href="mailto:alialjama64@gmail.com">alialjama64@gmail.com</a></span><span class="sep">|</span>
+      <span>Eastern Province, Saudi Arabia</span><br>
+      <span><a href="https://linkedin.com/in/ali-al-jama-150865183">linkedin.com/in/ali-al-jama-150865183</a></span><span class="sep">|</span>
+      <span><a href="https://github.com/entropy63">github.com/entropy63</a></span>
+    </div>
+  </header>
+  <section>
+    <h2>Profile</h2>
+    <p class="summary">Computer Science graduate specializing in software development, with hands-on internship experience building responsive web applications using React, TypeScript, Node.js, and PostgreSQL. Comfortable across the stack, from designing database schemas and REST APIs to wiring them into polished front-end interfaces. Focused on writing clean, scalable code and eager to grow as a software developer on a collaborative engineering team.</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="k">Languages</div><div>Java, C++, C#, Python, PHP, JavaScript, TypeScript, SQL</div>
+      <div class="k">Front-End</div><div>React, HTML, CSS</div>
+      <div class="k">Back-End &amp; Databases</div><div>Node.js, Express.js, PHP, MySQL, PostgreSQL</div>
+      <div class="k">Tools &amp; Other</div><div>Git, GitHub, MIPS Assembly, Cybersecurity fundamentals</div>
+      <div class="k">Soft Skills</div><div>Problem solving, critical thinking, communication, team collaboration</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Full-Stack Engineering Intern</span>
+        <span class="date">Jun 2026 &ndash; Aug 2026</span>
+      </div>
+      <div class="row">
+        <span class="sub">Capsule &mdash; Tahawul Initiative</span>
+        <span class="date">Eastern Province, Saudi Arabia</span>
+      </div>
+      <ul>
+        <li>Built full-stack features across the front end and back end using React, TypeScript, Express.js, and PostgreSQL.</li>
+        <li>Integrated React interfaces with backend REST APIs and database operations to deliver end-to-end functionality.</li>
+        <li>Collaborated within an engineering team using Git-based workflows to write, review, and ship code.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="row">
+        <span class="title">StockFlow &mdash; Inventory &amp; Sales ERP (Backend)</span>
+        <span class="date">2026 &ndash; Present</span>
+      </div>
+      <div class="stack">TypeScript &middot; Node.js &middot; Express &middot; Prisma &middot; PostgreSQL &middot; Zod</div>
+      <ul>
+        <li>Built a backend REST API for small-business inventory with a layered route &rarr; controller &rarr; service &rarr; repository architecture, keeping data access confined to the repository layer.</li>
+        <li>Implemented JWT authentication with bcrypt password hashing and role-based access control across a 6-role model, gating write access to privileged roles.</li>
+        <li>Built 17 REST endpoints over a product catalog (products, categories, units) with relational data, filtering, and a centralized layer mapping domain, validation, and database errors to correct HTTP status codes.</li>
+        <li>Hardened login against user-enumeration attacks and enforced data integrity with Zod validation, fixed-precision Decimal money, and service-level referential and uniqueness checks.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">VR Gloves &mdash; Immersive Interaction System</span>
+        <span class="date">2025 &ndash; 2026</span>
+      </div>
+      <ul>
+        <li>Developed a VR glove prototype with hand and finger tracking to enable natural interaction in virtual environments.</li>
+        <li>Implemented sensor-data handling and interaction logic for real-time immersive applications.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Online Pharmaceutical Web Application</span>
+        <span class="date">2025</span>
+      </div>
+      <ul>
+        <li>Built a web platform for browsing medical products, uploading prescriptions, and managing orders through a secure dashboard.</li>
+        <li>Developed the PHP/MySQL back end (database schema, order and prescription logic) and a responsive HTML/CSS/JavaScript front end.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Medication Reminder &mdash; Mobile Application</span>
+        <span class="date">2024</span>
+      </div>
+      <ul>
+        <li>Built a mobile app to schedule medications with custom reminders, dosage tracking, and notifications.</li>
+        <li>Designed an intuitive, accessible UI and implemented reliable notification and reminder logic.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row">
+        <span class="title">Bachelor of Science in Computer Science</span>
+        <span class="date">2021 &ndash; 2026</span>
+      </div>
+      <div class="row">
+        <span class="sub">Imam Abdulrahman Bin Faisal University</span>
+        <span class="date">Dammam, Saudi Arabia</span>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
